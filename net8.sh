@@ -1,0 +1,1 @@
+rm -rf bin obj && dotnet restore FuncHash.csproj && dotnet run --project FuncHash.csproj -f net8.0-ios -c Release -p:ArchiveOnBuild=true -r:ios-arm64 /p:_DeviceName=$1 /p:EnableAssemblyILStripping=false -v:n
